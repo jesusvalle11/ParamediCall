@@ -16,6 +16,7 @@ def enviar_mensaje_whatsapp_instantaneo(mensaje):
         print(f" Error al enviar el mensaje: {e}")
 
 def escuchar_comando():
+    
     with sr.Microphone() as source:
         print(" Escuchando... di algo como: 'El paciente tiene una fractura'")
         recognizer.adjust_for_ambient_noise(source)
